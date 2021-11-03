@@ -1,0 +1,13 @@
+name : A workflow to echo hello world
+on:
+  pull request:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: echo hello world action
+     runs-on: ubuntu-latest
+     steps:
+       - uses: actions/checkout@v2
+       - runs: echo Hello world
