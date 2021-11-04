@@ -2,7 +2,7 @@ name : A workflow to echo hello world on merge
 on:
   push:
     branches:
-      main
+      - main
 
 jobs:
   build:
